@@ -1,11 +1,23 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, KeyboardAvoidingView, ScrollView, Platform } from 'react-native';
 
-export default function CustomKeyboardView() {
+const android = Platform.OS === 'android';
+export default function CustomKeyboardView({children}) {
   return (
-    <View>
-      <Text>CustomKeyboardView</Text>
-    </View>
+      <KeyboardAvoidingView>
+        behavior= {android ? "padding" : "position"}
+        style={{ flex: 1 }}
+
+        <ScrollView
+            style={{flex: 1}}
+            bounces={false}
+            showsVerticalScrollIndicator={false}
+        >
+            {
+                children
+            }
+        </ScrollView>
+      </KeyboardAvoidingView>
   );
 }

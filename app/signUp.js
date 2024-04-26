@@ -10,6 +10,7 @@ import {
 } from 'react-native-responsive-screen';
 
 import Loading from '../components/Loading';
+import CustomKeyboardView from '../components/CustomKeyboardView';
 
 export default function SignUp() {
   const router = useRouter();
@@ -27,7 +28,7 @@ export default function SignUp() {
     //Processo de Registro
   };
   return (
-    <View className="flex-1">
+    <CustomKeyboardView>
       <StatusBar style="dark" />
       <View style={{ paddingTop: hp(8), paddingHorizontal: wp(5) }} className="flex-1  gap-12">
         {/* SignIn Image */}
@@ -131,6 +132,6 @@ export default function SignUp() {
           </View>
         </View>
       </View>
-    </View>
+    </CustomKeyboardView>
   );
 }
