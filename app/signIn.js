@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 
 export default function SignIn() {
   return (
-    <View>
+    <View className="pt-20">
       <Text>SignIn</Text>
     </View>
   );
