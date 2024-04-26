@@ -8,5 +8,5 @@
       "~/*": ["*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts", "app/(tabs)/_layout.js", "app/(tabs)/index.js", "app/(tabs)/two.js", "app/_layout.js", "app/+html.ts", "app/modal.js"]
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts", "app/(tabs)/_layout.js", "app/(tabs)/index.js", "app/(tabs)/two.js", "app/_layout.js", "app/+html.JS", "app/index.js"]
 }
