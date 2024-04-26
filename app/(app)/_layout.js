@@ -2,10 +2,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-export default function SignIn() {
+export default function _layout() {
   return (
     <View>
-      <Text>SignIn</Text>
+      <Text>_layout</Text>
     </View>
   );
 }

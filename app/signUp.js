@@ -1,10 +1,11 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+/* eslint-disable prettier/prettier */
+import React from 'react';
+import { View, Text } from 'react-native';
 
-export default function signUp() {
+export default function SignUp() {
   return (
     <View>
-      <Text>signUp</Text>
+      <Text>SignUp</Text>
     </View>
-  )
+  );
 }
